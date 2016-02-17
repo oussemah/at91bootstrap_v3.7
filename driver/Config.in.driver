@@ -1,0 +1,38 @@
+config	ALLOW_PIO3
+	bool
+	default n
+
+config	CONFIG_HAS_PIO3
+	bool
+	depends on ALLOW_PIO3
+	default y
+
+config CPU_HAS_PMECC
+	bool
+	default n
+
+config CONFIG_LOAD_ONE_WIRE
+	bool
+	default n
+
+config CONFIG_MMC_SUPPORT
+	bool
+	default n
+
+config CONFIG_TWI
+	bool
+	default n
+
+config CONFIG_MACB
+	bool
+	default n
+
+config CONFIG_HDMI
+	bool
+	default n
+
+config CONFIG_WM8904
+	bool
+	default y
+
+source "driver/Config.in.memory"
